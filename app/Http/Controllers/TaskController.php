@@ -24,8 +24,8 @@ class TaskController extends Controller
 
     public function delete(Task $task)
     {
-        $task->delete();
         broadcast(new TaskRemoved($task));
+        $task->delete();
 
         return response()->json('deleted');
     }

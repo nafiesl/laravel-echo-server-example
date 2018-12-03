@@ -13,4 +13,4 @@
 
 Route::get('todos', 'TaskController@fetchAll');
 Route::post('todos', 'TaskController@store');
-Route::delete('todos/{id}', 'TaskController@delete');
+Route::delete('todos/{task}', 'TaskController@delete');
