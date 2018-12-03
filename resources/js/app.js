@@ -20,7 +20,10 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('todo', require('./components/Todo'))
+Vue.component('new-todo', require('./components/NewTodo.vue'))
+Vue.component('todo-list', require('./components/TodoList'))
+Vue.component('todo-app', require('./components/TodoApp'))
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
